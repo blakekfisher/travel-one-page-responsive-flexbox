@@ -1,0 +1,19 @@
+{
+  "name": "csstravelproject",
+  "version": "1.0.0",
+  "description": "CSS Travel Project for Advanced Web Dev Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blake Fisher",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2"
+  }
+}

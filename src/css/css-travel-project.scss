@@ -1,0 +1,337 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap');
+
+// Variables
+$background-color: #84A5DA;
+$main-text-color: white;
+$main-font-family: 'Open sans', sans-serif;
+$highlight-font-family: 'Quicksand', sans-serif;
+$section-header-size: 32px;
+$section-font-size: 16px;
+$blue-color: #3f51b5;
+$footer-background-color: #607d8b;
+$content-max-width: 60%;
+$section-margin: 100px; 
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font-family;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+hr {
+    border: 1.5px solid $blue-color;
+    width: 30%;
+}
+
+.background {
+    background-image: url('/images/main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: $highlight-font-family;
+    color: $main-text-color;
+}
+
+header p {
+    margin: 25px 50px;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin: 25px 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: $main-text-color;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $main-text-color;
+    height: 80vh;
+}
+
+.main h1 {
+    font-size: 60px;
+    margin: 0px 0px 15px;
+}
+
+button {
+    background-color: $blue-color;
+    border: none;
+    color: $main-text-color;
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: $main-font-family;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: $section-font-size;
+    margin: 100px 10%;
+}
+
+.destinations p {
+    max-width: $content-max-width;
+}
+
+.info {
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;   
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+.first {
+    background-image: url("/images/mountain1.jpg")
+}
+.second {
+    background-image: url("/images/mountain2.jpg")
+}
+.third {
+    background-image: url("/images/mountain3.jpg")
+}
+.fourth {
+    background-image: url("/images/mountain4.jpg")
+}
+
+.images {
+    height: 400px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+.small {
+    flex-basis: 30%;
+}
+
+.large {
+    flex-basis: 70%;
+}
+
+.tours {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: $section-font-size;
+    margin: 100px 10%;
+}
+
+.tours p {
+    max-width: $content-max-width;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.guided {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guided p {
+    max-width: $content-max-width;
+}
+
+.features i {
+    color: $blue-color;
+    font-size: 50px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.testimonials blockquote {
+    max-width: $content-max-width;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $section-margin;
+}
+
+.learn-more p {
+max-width: $content-max-width;
+}
+
+.subscribe {
+    margin: 20px;
+}
+
+.subscribe > * {
+    margin: 10px 0px;
+}
+
+.subscribe input {
+    padding: 20px;
+    width: 400px;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $footer-background-color;
+    color: rgb(209, 209, 209);
+    align-items: center;
+    margin-top: $section-margin
+
+}
+
+footer h3 {
+    font-size: 12px;  
+}
+
+footer i {
+    font-size: 30px;
+}
+
+footer > * {
+    margin: 25px 50px;
+}
+
+.social i {
+    padding: 10px;
+}
+
+// Media Queries
+
+@media screen and (max-width: 1100px){
+    .small {
+        flex-basis: 50%;
+    }
+    
+    .large {
+        flex-basis: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    footer h3 {
+        margin: 5px;
+    }
+
+    .social {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header p {
+        margin-bottom: 0px;
+    }
+
+    nav {
+       margin: 10px 50px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+        margin: 0px 0px 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+
+    .background {
+        height: 600px;
+    }
+
+    .main {
+        height: 500px;
+    }
+
+    .small {
+        flex-basis: 100%;
+    }
+    
+    .large {
+        flex-basis: 100%;
+    }
+
+    .guided {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destinations, .tours, .features, .testimonials, .learn-more {
+        margin: 50px;
+    }
+
+}

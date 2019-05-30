@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open sans", sans-serif; }
+
+h3 {
+  font-size: 28px; }
+
+hr {
+  border: 1.5px solid #3f51b5;
+  width: 30%; }
+
+.background {
+  background-image: url("/images/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Quicksand", sans-serif;
+  color: white; }
+
+header p {
+  margin: 25px 50px;
+  font-size: 1.5rem; }
+
+nav {
+  margin: 25px 50px; }
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 20px; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 80vh; }
+
+.main h1 {
+  font-size: 60px;
+  margin: 0px 0px 15px; }
+
+button {
+  background-color: #3f51b5;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "Open sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px; }
+
+.destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555;
+  font-size: 16px;
+  margin: 100px 10%; }
+
+.destinations p {
+  max-width: 60%; }
+
+.info {
+  line-height: 2.5em;
+  text-align: center; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none; }
+
+.first {
+  background-image: url("/images/mountain1.jpg"); }
+
+.second {
+  background-image: url("/images/mountain2.jpg"); }
+
+.third {
+  background-image: url("/images/mountain3.jpg"); }
+
+.fourth {
+  background-image: url("/images/mountain4.jpg"); }
+
+.images {
+  height: 400px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box; }
+
+.small {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
+
+.large {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+
+.tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555;
+  font-size: 16px;
+  margin: 100px 10%; }
+
+.tours p {
+  max-width: 60%; }
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px; }
+
+.guided {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.guided p {
+  max-width: 60%; }
+
+.features i {
+  color: #3f51b5;
+  font-size: 50px; }
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.testimonials blockquote {
+  max-width: 60%; }
+
+.learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px; }
+
+.learn-more p {
+  max-width: 60%; }
+
+.subscribe {
+  margin: 20px; }
+
+.subscribe > * {
+  margin: 10px 0px; }
+
+.subscribe input {
+  padding: 20px;
+  width: 400px;
+  font-size: 15px; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #607d8b;
+  color: #d1d1d1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px; }
+
+footer h3 {
+  font-size: 12px; }
+
+footer i {
+  font-size: 30px; }
+
+footer > * {
+  margin: 25px 50px; }
+
+.social i {
+  padding: 10px; }
+
+@media screen and (max-width: 1100px) {
+  .small {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .large {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  footer h3 {
+    margin: 5px; }
+  .social {
+    margin: 5px; } }
+
+@media screen and (max-width: 1000px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media screen and (max-width: 800px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  header p {
+    margin-bottom: 0px; }
+  nav {
+    margin: 10px 50px; }
+  .main h1 {
+    font-size: 48px;
+    margin: 0px 0px 15px; }
+  h3 {
+    font-size: 20px; }
+  button {
+    padding: 10px 20px;
+    font-size: 11px; }
+  .background {
+    height: 600px; }
+  .main {
+    height: 500px; }
+  .small {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .large {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .guided {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .destinations, .tours, .features, .testimonials, .learn-more {
+    margin: 50px; } }
